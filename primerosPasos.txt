@@ -1,0 +1,40 @@
+video: https://www.youtube.com/watch?v=GMppyAPbLYk
+
+activar entorno 
+venv\Scripts\activate
+
+1- pegar esto de abajo en requirements.txt y hacer pip install eso 
+aniso8601==8.0.0
+click==7.1.2
+Flask==1.1.2
+Flask-RESTful==0.3.8
+Flask-SQLAlchemy==2.4.3
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+pytz==2020.1
+six==1.15.0
+SQLAlchemy==1.3.18
+Werkzeug==1.0.1
+
+pip install google-auth
+
+
+/*******/
+para env
+pip install python-dotenv
+
+/*********/
+nota: cada vez que devolvamos alguna info de la api necesitamos asegurarnos
+que esa info es SERIALIZABLE osea tipo un json
+un json es tipo un diccionario 
+
+
+2- para correr python main.py
+3- para correr otro archivo primero correr el main(para que la 
+api este levantada) y despues en otra terminal correr el otro, por ejemplo python test.py
+
+
+/***** PARA instalar BD *********/
+python -m pip install "pymongo[srv]"
+y despues agregar el conection string mongodb+srv://fbeljansky:Rio3ro34@helpaydb.a2u15.mongodb.net/?retryWrites=true&w=majority&appName=helPayDb
